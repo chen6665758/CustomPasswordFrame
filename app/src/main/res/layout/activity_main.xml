@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cg.custompwd.MainActivity">
+
+    <com.example.cg.custompwd.custom.simpleCustomPwd
+        android:id="@+id/myPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:pwdFrameColorOfBegin="#ff3344"
+        app:pwdFrameColorOfEnd="#22ff22"
+        app:pwdTextSize="28sp"
+        app:pwdStyleType="Line"/>
+
+    <Button
+        android:id="@+id/btn_getNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myPwd"
+        android:text="得到数据"/>
+
+    <Button
+        android:id="@+id/btn_setNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_getNumber"
+        android:text="设置数据"/>
+    <Button
+        android:id="@+id/btn_CancelNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_setNumber"
+        android:text="清空数据"/>
+
+    <TextView
+        android:id="@+id/txt_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/btn_CancelNumber"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

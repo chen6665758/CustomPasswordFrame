@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--密码个数-->
+    <attr name="pwdNumber" format="integer" />
+    <attr name="pwdMargin" format="dimension" />
+    <attr name="pwdFrameColorOfBegin" format="color" />
+    <attr name="pwdFrameColorOfEnd" format="color" />
+    <attr name="pwdFrameStrokeWidth" format="integer"/>
+    <attr name="pwdTextColor" format="color"/>
+    <attr name="pwdTextSize" format="dimension"/>
+    <attr name="pwdBgBitmap" format="reference"/>
+    <attr name="pwdStyleType">
+        <enum name="Frame" value="1" />
+        <enum name="Line" value="2" />
+        <enum name="phone" value="3" />
+    </attr>
+
+    <declare-styleable name="cgPwd">
+        <attr name="pwdNumber" />
+        <attr name="pwdMargin" />
+        <attr name="pwdFrameColorOfBegin" />
+        <attr name="pwdFrameColorOfEnd" />
+        <attr name="pwdFrameStrokeWidth"/>
+        <attr name="pwdTextColor"/>
+        <attr name="pwdTextSize"/>
+        <attr name="pwdStyleType"/>
+        <attr name="pwdBgBitmap"/>
+    </declare-styleable>
+
+</resources>
